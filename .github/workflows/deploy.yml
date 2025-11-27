@@ -2,6 +2,11 @@ name: Windows VM with Office (Terraform)
 
 on:
   workflow_dispatch:
+    inputs:
+      prompt:
+        description: "Terraform VM Creation"
+        required: true
+        type: string
 
 jobs:
   deploy:
